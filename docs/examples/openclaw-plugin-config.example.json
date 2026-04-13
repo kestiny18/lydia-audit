@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "@lydia/openclaw-plugin": {
+      "baseDir": "~/.lydia-audit/openclaw",
+      "workspaceId": "demo-workspace",
+      "enforceApprovals": false
+    }
+  }
+}

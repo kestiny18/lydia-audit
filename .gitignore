@@ -1,0 +1,14 @@
+node_modules/
+dist/
+artifacts/
+.pnpm-store/
+.DS_Store
+Thumbs.db
+*.log
+coverage/
+.nyc_output/
+.turbo/
+.cache/
+.idea/
+.vscode/
+*.tsbuildinfo

@@ -1,0 +1,32 @@
+{
+  "name": "@lydia/openclaw-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "openclaw": {
+    "extensions": [
+      "./dist/openclaw-entry.js"
+    ]
+  },
+  "dependencies": {
+    "@lydia/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "openclaw": "^2026.4.12"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./openclaw-entry": {
+      "types": "./dist/openclaw-entry.d.ts",
+      "import": "./dist/openclaw-entry.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run tests"
+  }
+}
